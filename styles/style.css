@@ -1,0 +1,26 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+#cabecalho{
+    background-color: gray;
+    height: 230px;
+}
+#cabecalho h1{
+    line-height: 200px;
+    margin-left: 10px;
+}
+nav{
+   margin-bottom: 50px;
+  
+}
+nav ul{
+    position: absolute;
+    right: 100px;
+    top: 180px;
+}
+nav li{
+    margin-right: 10px;
+    display: inline-block;
+}
