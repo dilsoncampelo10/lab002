@@ -1,10 +1,11 @@
 @charset "UTF-8";
 :root{
     --cor-cabecalho: rgb(184, 178, 178);
-    --cor-nacegacao: rgb(57, 209, 255);
+    --cor-navegacao: rgb(0, 59, 77);
 }
 *{
     margin: 0; 
+    padding: 0;
 }
 body{
     background-color: rgb(229, 231, 230);
@@ -18,48 +19,56 @@ body{
     margin-left: 10px;
 }
 .cabecalho .traco{
-    margin-top: 30px;
-    width: 100%;
-    background-color: var(--cor-nacegacao);
+    margin-top: 50px;
+    width: 50%;
+    border-radius: 4px 7px 3px 5px;
+    background-color: var(--cor-navegacao);
     padding: 0px;
-    height: 15%;
+    
+    height: 10%;
 }
-nav .nivelum{
-    float: right;
-    margin-right: 100px;
-    background-color: var(--cor-nacegacao);
-    border-radius: -5px 10px;
-}
-nav ul li{
-    display: inline-block;
-    margin-right: 20px;
-}
-nav ul ul li{
-    display: block;
-    position: absolute;
-    bottom: 370px;
+.menu{
+    background-color: var(--cor-navegacao);
+    width: 100%;
+    height: 40px;
     
 }
-nav ul ul{
+.menu ul{
+    list-style: none;
+    float: right;
+}
+.menu ul li{
+   display: inline-block;
+    width: 120px;
+    text-align: center;
+    
+}
+.menu a{
+    font-weight: bold;
+    color: white;
+    display: block;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+    background-color: var(--cor-navegacao);
+}
+.menu ul ul{
     display: none;
 }
-nav ul a{
-    text-transform: uppercase;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 1.1rem;
-    padding: 5px;
+.menu a:hover{
+    color: red;
 }
-nav ul a:hover{
-    color: rgb(255, 0, 0);
-}
-nav ul li:hover ul{
+.menu ul li:hover ul{
     display: block;
-    
 }
 
 /*Seções*/
+main{
+    margin-top: 90px;
+}
 #imagem{
+    
     float: left;
     width: 40%;
     border-right: 1px solid black;
@@ -69,4 +78,8 @@ nav ul li:hover ul{
 #texto{
     float: right;
     width: 50%;
+}
+/*Rodapé*/
+.rodape{
+    
 }
