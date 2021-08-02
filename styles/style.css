@@ -10,6 +10,7 @@
 body{
     background-color: rgb(229, 231, 230);
 }
+/*Header*/
 .cabecalho{
     background-color: var(--cor-cabecalho); 
     height: 230px;
@@ -20,13 +21,13 @@ body{
 }
 .cabecalho .traco{
     margin-top: 50px;
-    width: 50%;
-    border-radius: 4px 7px 3px 5px;
+    width: 45%;
+    border-radius: 4px 70px 3px 5px;
     background-color: var(--cor-navegacao);
     padding: 0px;
-    
     height: 10%;
 }
+/*Menu de Navegação */ 
 .menu{
     background-color: var(--cor-navegacao);
     width: 100%;
@@ -55,9 +56,14 @@ body{
 }
 .menu ul ul{
     display: none;
+    position: absolute;
 }
 .menu a:hover{
-    color: red;
+    color: rgb(55, 146, 173);
+    background-color: rgb(27, 68, 80);
+}
+.menu ul li ul li{
+    border: 1px solid rgb(2, 23, 29)
 }
 .menu ul li:hover ul{
     display: block;
@@ -66,13 +72,18 @@ body{
 /*Seções*/
 main{
     margin-top: 90px;
+    padding: 10px;
 }
-#imagem{
-    
+section{
+    background-color: white;
+    padding: 10px;
+    height: 450px;
+    border-radius: 1rem;
+    margin-bottom: 70px;
+}
+#imagem{ 
     float: left;
     width: 40%;
-    border-right: 1px solid black;
-    margin-left: 20px;
     padding-right: 50px;
 }
 #texto{
@@ -81,5 +92,6 @@ main{
 }
 /*Rodapé*/
 .rodape{
-    
+   
+  
 }
