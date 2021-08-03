@@ -53,19 +53,23 @@ body{
     font-size: 0.8rem;
     text-decoration: none;
     background-color: var(--cor-navegacao);
+    
 }
 .menu ul ul{
     display: none;
     position: absolute;
 }
 .menu a:hover{
+    transition: 0.5s;
     color: rgb(55, 146, 173);
     background-color: rgb(27, 68, 80);
 }
 .menu ul li ul li{
+    
     border: 1px solid rgb(2, 23, 29)
 }
 .menu ul li:hover ul{
+    
     display: block;
 }
 
