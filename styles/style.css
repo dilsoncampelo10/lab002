@@ -42,7 +42,6 @@ body{
     display: inline-block;
     width: 120px;
     text-align: center;
-    
 }
 .menu a{
     font-weight: bold;
@@ -53,7 +52,6 @@ body{
     font-size: 0.8rem;
     text-decoration: none;
     background-color: var(--cor-navegacao);
-    
 }
 .menu ul ul{
     display: none;
@@ -65,12 +63,24 @@ body{
     background-color: rgb(27, 68, 80);
 }
 .menu ul li ul li{
-    
     border: 1px solid rgb(2, 23, 29);
 }
 .menu ul li:hover ul{
-    
     display: block;
+}
+.dropdown{
+    margin-left: 15px;
+    display: none;
+}
+.menudrop{
+    background-color: rgb(154, 231, 255);
+    width: 60px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.menudrop:hover{
+    background-color: rgb(57, 112, 129);
+    cursor: pointer;
 }
 
 /*Seções*/
@@ -98,10 +108,41 @@ section{
 /*Rodapé*/
 .rodape{
     clear: both;
-    height: 50px;
+    height: 100px;
     color: white;
     line-height: 50px;
     text-align: center;
     background-color: var(--cor-navegacao);
-  
+}
+.rodape div{
+    background-color: rgb(214, 214, 214);
+    height: 40px;
+}
+@media(min-width: 700px) and (max-width: 1000px){
+    section{
+        padding: 25px;
+    }
+    #imagem{ 
+        float: left;
+        width: 40%;
+    }
+    #texto{
+        width: 40%;
+    }
+    .menu ul{
+        display: none;
+    }
+   
+    .dropdown{
+        display: block;
+    
+    }
+}
+@media(min-width:300px) and (max-width:700px){
+    .cabecalho{
+        background-color: rgb(255, 0, 0);
+        width: 100%;
+    }
+    
+    
 }
