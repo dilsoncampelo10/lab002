@@ -69,19 +69,13 @@ body{
 .menu ul li:hover ul{
     display: block;
 }
-.dropdown{
-    margin-left: 15px;
+
+nav input[type=checkbox]{
     display: none;
 }
 .menudrop{
-    background-color: rgb(154, 231, 255);
-    width: 60px;
-    border-radius: 10px;
-    margin-left: 5px;
-}
-.menudrop:hover{
-    background-color: rgb(57, 112, 129);
-    cursor: pointer;
+    margin-left: 20px;
+    display: none;
 }
 
 /*Seções*/
@@ -133,10 +127,27 @@ section{
     .menu ul{
         display: none;
     }
-   
-    .dropdown{
+    .menudrop{
         display: block;
-    
+        cursor: pointer;
+    }
+    .menu input[type=checkbox]:checked ~  ul{
+        display: block;
+    }
+
+    .menu ul li{
+        display: block;
+        
+    }
+    .menu ul li ul li{
+        margin-left: 100px;
+    }
+    .menu ul{
+        position: absolute;
+    }
+    .menu a{
+        width: 100vh;
+        
     }
 }
 @media(min-width:300px) and (max-width:700px){
