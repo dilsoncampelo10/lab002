@@ -15,6 +15,7 @@ body{
 .cabecalho{
     background-color: var(--cor-cabecalho); 
     height: 230px;
+    max-width:100%;
 }
 .cabecalho img{
     margin-top: 50px;
@@ -103,7 +104,7 @@ section{
 /*Rodapé*/
 .rodape{
     clear: both;
-    height: 100px;
+    height: 160px;
     color: white;
     line-height: 50px;
     text-align: center;
@@ -112,6 +113,11 @@ section{
 .rodape div{
     background-color: rgb(214, 214, 214);
     height: 40px;
+}
+.irtopo, .rodape a{
+    text-align: right;
+    margin: 10px;
+    color: white;
 }
 @media(min-width: 700px) and (max-width: 1000px){
     section{
@@ -134,27 +140,74 @@ section{
     .menu input[type=checkbox]:checked ~  ul{
         display: block;
     }
-
     .menu ul li{
         display: block;
-        
-    }
-    .menu ul li ul li{
-        margin-left: 100px;
-    }
-    .menu ul{
-        position: absolute;
+        border: 1px solid black;
     }
     .menu a{
-        width: 100vh;
+        padding: 20px;
+    }
+    .menu ul li ul{
+        position: absolute;
+        margin-left: 120px;
+        margin-top: -55px;
         
     }
-}
-@media(min-width:300px) and (max-width:700px){
-    .cabecalho{
-        background-color: rgb(255, 0, 0);
-        width: 100%;
+    .menu ul{
+        float: left;
+        position: absolute;
+        background-color: var(--cor-navegacao);
     }
     
+}
+@media(min-width:280px) and (max-width:699px){
+    .cabecalho{
+        width: 100%;
+    }
+    section{
+        padding: 25px;
+        margin: auto;
+    }
+    #imagem{ 
+        width: 70%;
+        float: none;
+        margin-bottom: 50px;
+    }
+    #texto{
+        width: 80%;
+        float: none;
+    }
+    .menu{
+        margin-top: -50px;
+        height: 70px;
+    }
+    /*menu dropdown*/
+    .menu ul{
+        display: none;
+    }
+    .menudrop{
+        display: block;
+        cursor: pointer;
+    }
+    .menu input[type=checkbox]:checked ~  ul{
+        display: block;
+    }
+    .menu ul li{
+        display: block;
+        border: 1px solid black;
+    }
+    .menu a{
+        padding: 20px;
+    }
+    .menu ul li ul{
+        position: absolute;
+        margin-left: 120px;
+        margin-top: -55px;
+    }
+    .menu ul{
+        float: left;
+        position: absolute;
+        background-color: var(--cor-navegacao);
+    }
     
 }
